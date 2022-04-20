@@ -1,17 +1,20 @@
 package lesson12;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     static final int SIZE = 10000000;
     static final int HALF = SIZE / 2;
 
     public static void main(String[] args) {
-
         long time = runInSingleTread();
         System.out.println("Время, затраченное на выполнение в одном потоке: " + time);
 
         time = runInTwoTreads();
         System.out.println("Время, затраченное на выполнение в двух потоках: " + time);
+
     }
 
     public static void f(float[] arr, long n) {
