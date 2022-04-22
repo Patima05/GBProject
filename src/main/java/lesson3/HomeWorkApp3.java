@@ -153,7 +153,7 @@ public class HomeWorkApp3 {
 
     /* 7. ** Написать метод, в который передается не пустой одномерный целочисленный массив, метод должен вернуть true,
        если в массиве есть место, в котором сумма левой и правой части массива равны. */
-    private static boolean isLeftRightEquals(int... arr) {
+    public static boolean isLeftRightEquals(int... arr) {
         boolean isEquals = false;
         int leftSum = arr[0];
         int rightSum = 0;
@@ -181,7 +181,7 @@ public class HomeWorkApp3 {
        (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ]. При каком n в какую
        сторону сдвиг можете выбирать сами. */
 
-    private static int[] shiftN(int n, int[] arr) {
+    public static int[] shiftN(int n, int[] arr) {
         if (n > 0) {   //сдвиг вправо
             while (n > arr.length) n -= arr.length;
             for (int k = 0; k < n; k++) {
