@@ -1,1 +1,1 @@
-# GBProject
+# JavaCore-project
